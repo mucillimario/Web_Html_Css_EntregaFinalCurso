@@ -1,0 +1,504 @@
+/* MEDIA QUERIES - Tamano L*/
+@media screen and (max-width: 799px) {
+
+
+    /////////////////
+
+    .card-v-img {
+        min-width: 48%;
+        padding-bottom: 1rem;
+    }
+
+    .img_index_servicios_XL {
+        display: none;
+        border: solid 3px red;
+    }
+
+    .img_index_servicios_L {
+        display: flex;
+        border: solid 3px rgb(18, 10, 103);
+    }
+
+
+    // Pages -> Contacto.html //
+
+    .section-contacto {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .formulario {
+        width: 98%;
+    }
+
+    .form-textarea {
+        height: 10rem;
+    }
+
+    .mapa {
+        width: 98%;
+    }
+
+}
+
+
+
+
+
+
+/* MEDIAS QUERIES - Tamaño M*/
+
+@media screen and (max-width: 510px) {
+
+
+    // Scss -> Globales.scss
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .nav-li a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    // Pages -> index.html //
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: .25rem 0rem .25rem 0rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        padding: 0rem 0rem 0rem 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        padding: 1rem 0rem 1rem 0rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .card-v-img {
+        min-width: 48%;
+        padding-bottom: 1rem;
+    }
+
+    .imgtrabajosmobile {
+        display: flex;
+
+    }
+
+    .imgtrabajosgrande {
+        display: none;
+    }
+
+    // pages -> trabajos.html //
+
+    .grid-contenedor-trabajos {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 40px auto auto auto auto auto;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "c1  c1   c2"
+            "c5  c6   c2"
+            "c9  c6   c10"
+            "c9  c14  c15"
+            "footer footer footer";
+    }
+
+
+    .header__trabajos {
+        grid-area: header;
+    }
+
+    .nav__trabajos {
+        grid-area: nav_t;
+    }
+
+    .main_trabajos {
+        grid-area: main_t;
+    }
+
+    .caja1 {
+        grid-area: c1;
+    }
+
+    .caja2 {
+        grid-area: c2;
+    }
+
+    .caja3 {
+        grid-area: c3;
+        display: none;
+    }
+
+    .caja4 {
+        grid-area: c4;
+        display: none;
+    }
+
+    .caja5 {
+        grid-area: c5;
+    }
+
+    .caja6 {
+        grid-area: c6;
+    }
+
+    .caja7 {
+        grid-area: c7;
+        display: none;
+    }
+
+    .caja8 {
+        grid-area: c8;
+
+        display: none;
+    }
+
+    .caja9 {
+        grid-area: c9;
+    }
+
+    .caja10 {
+        grid-area: c10;
+    }
+
+    .caja11 {
+        grid-area: c11;
+        display: none;
+    }
+
+    .caja12 {
+        grid-area: c12;
+        display: none;
+    }
+
+    .caja13 {
+        grid-area: c13;
+        display: none;
+    }
+
+    .caja14 {
+        grid-area: c14;
+    }
+
+    .caja15 {
+        grid-area: c15;
+    }
+
+    .caja16 {
+        grid-area: c16;
+        display: none;
+    }
+
+    .footer__trabajos {
+        grid-area: footer;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIAS QUERIES - Tamaño S*/
+
+@media screen and (max-width: 360px) {
+
+    // Scss -> Globales.scss
+
+    .nav-li a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    // Pages -> index.html //
+
+    .grid-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 40px auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "carrusel"
+            "main"
+            "main1"
+            "main2"
+            "main4"
+            "main3"
+            "main5"
+            "main6"
+            "trabajos"
+            "footer";
+    }
+
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .carrusel {
+        grid-area: carrusel;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .textoderecha {
+        text-align: justify;
+    }
+
+    .tiradetrabajos {
+        grid-area: trabajos;
+    }
+
+    .trabajos {
+        width: 100%;
+    }
+
+
+    // Pages -> equipos.html //
+
+    .grid-contenedor-equipos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "main1"
+            "main2"
+            "main4"
+            "main3"
+            "main5"
+            "main6"
+            "main8"
+            "main7"
+            "footer";
+    }
+
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+
+    // pages -> trabajos.html //
+
+    .grid-contenedor-trabajos {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 40px auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "c1  c1"
+            "c5  c6"
+            "c9  c6"
+            "c9  c14"
+            "c2  c2"
+            "c10  c15"
+            "footer footer";
+    }
+
+    .header__trabajos {
+        grid-area: header;
+    }
+
+    .nav__trabajos {
+        grid-area: nav_t;
+    }
+
+    .main_trabajos {
+        grid-area: main_t;
+    }
+
+    .caja1 {
+        grid-area: c1;
+
+    }
+
+    .caja2 {
+        grid-area: c2;
+    }
+
+    .caja3 {
+        grid-area: c3;
+        display: none;
+    }
+
+    .caja4 {
+        grid-area: c4;
+        display: none;
+    }
+
+    .caja5 {
+        grid-area: c5;
+
+    }
+
+    .caja6 {
+        grid-area: c6;
+
+    }
+
+    .caja7 {
+        grid-area: c7;
+        display: none;
+    }
+
+    .caja8 {
+        grid-area: c8;
+        display: none;
+    }
+
+    .caja9 {
+        grid-area: c9;
+    }
+
+    .caja10 {
+        grid-area: c10;
+
+    }
+
+    .caja11 {
+        grid-area: c11;
+        display: none;
+    }
+
+    .caja12 {
+        grid-area: c12;
+        display: none;
+    }
+
+    .caja13 {
+        grid-area: c13;
+        display: none;
+    }
+
+    .caja14 {
+        grid-area: c14;
+    }
+
+    .caja15 {
+        grid-area: c15;
+
+    }
+
+    .caja16 {
+        grid-area: c16;
+        display: none;
+    }
+
+    .footer__trabajos {
+        grid-area: footer;
+    }
+
+
+    // pages -> contacto.html //
+
+    .section-contacto {
+        width: 80%;
+    }
+
+
+    .formulario {
+        width: 100%;
+        padding: 30px;
+    }
+
+
+
+    .mapa {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .mapaincustrado_grande {
+        width: 100%;
+        height: 250px;
+    }
+
+
+    // Fotter General //
+
+    .footer__logo {
+        width: 75px;
+        display: flex;
+        align-self: center;
+
+    }
+
+
+}

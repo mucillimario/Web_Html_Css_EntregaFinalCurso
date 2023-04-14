@@ -1,0 +1,62 @@
+// Css de page Equipos
+
+.grid-contenedor-equipos {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 40px auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "header        header"
+        "nav           nav"
+        "main          main"
+        "main1         main2"
+        "main3         main4"
+        "main5         main6"
+        "main7         main8"
+        "footer        footer";
+}
+
+/* CSS MAIN */
+
+.main {
+    grid-area: main;
+}
+
+.main01 {
+    grid-area: main1;
+}
+
+.main04 {
+    grid-area: main4;
+}
+
+.main05 {
+    grid-area: main5;
+}
+
+.main08 {
+    grid-area: main8;
+}
+
+.img-card-h {
+    object-fit: contain;
+}
+
+.main02 {
+    grid-area: main2;
+}
+
+.main03 {
+    grid-area: main3;
+}
+
+.main06 {
+    grid-area: main6;
+}
+
+.main07 {
+    grid-area: main7;
+}
+
+

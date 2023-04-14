@@ -1,0 +1,88 @@
+.grid-contenedor {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 40px auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "header        header"
+        "nav           nav"
+        "carrusel      carrusel"
+        "main           main"
+        "main1         main2"
+        "main3         main4"
+        "main5         main6"
+        "trabajos     trabajos"
+        "footer        footer";
+}
+
+/* CSS CARRUSEL */
+
+.carrusel {
+    grid-area: carrusel;
+}
+.w-100 {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* CSS MAIN SERVICIOS */
+
+.main01 {
+    grid-area: main1;
+}
+
+.main04 {
+    grid-area: main4;
+}
+
+.main05 {
+    grid-area: main5;
+}
+
+.main02 {
+    grid-area: main2;
+}
+
+.main03 {
+    grid-area: main3;
+}
+
+.main06 {
+    grid-area: main6;
+}
+
+/* CSS INDEX-TRABAJOS */
+
+.tiradetrabajos {
+    grid-area: trabajos;
+    @extend .DISPLAY_flex_FLEX-WRAP_wrap;
+    background-color: $background-trabajos;
+}
+
+.trabajos {
+    @extend .DISPLAY_flex_FLEX-WRAP_wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.card-v-img {
+    width: 16%;
+    border-radius: 7px;
+}
+
+.img_index_trabajos_M {
+    display: flex;
+}
+
+.img_index_trabajos_S {
+    display: none;
+}
+
+
+.carousel-item {
+    object-fit: fill;
+    height: 300px;
+}

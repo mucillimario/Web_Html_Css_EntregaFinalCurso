@@ -1,0 +1,152 @@
+// Css de page Equipos
+
+.grid-contenedor-trabajos {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 40px auto auto auto auto auto;
+    grid-template-areas:
+        "header header header header header header "
+        "nav nav nav nav nav nav "
+        "main main main main main main "
+        "c1  c1   c2   c3   c3   c4"
+        "c5  c6   c7   c7   c8   c4"
+        "c9  c6   c10  c11  c12  c13"
+        "c9  c14  c15  c15  c12  c16"
+        "footer footer footer footer footer footer ";
+
+}
+
+
+.header__trabajos {
+    grid-area: header;
+}
+
+.nav__trabajos {
+    grid-area: nav_t;
+}
+
+.main_trabajos {
+    grid-area: main_t;
+}
+
+// Inicia las grids de la galeria de trajos //
+.caja1 {
+    grid-area: c1;
+}
+
+.caja2 {
+    grid-area: c2;
+}
+
+.caja3 {
+    grid-area: c3;
+}
+
+.caja4 {
+    grid-area: c4;
+}
+
+.caja5 {
+    grid-area: c5;
+}
+
+.caja6 {
+    grid-area: c6;
+}
+
+.caja7 {
+    grid-area: c7;
+}
+
+.caja8 {
+    grid-area: c8;
+}
+
+.caja9 {
+    grid-area: c9;
+}
+
+.caja10 {
+    grid-area: c10;
+}
+
+.caja11 {
+    grid-area: c11;
+}
+
+.caja12 {
+    grid-area: c12;
+}
+
+.caja13 {
+    grid-area: c13;
+}
+
+.caja14 {
+    grid-area: c14;
+
+}
+
+.caja15 {
+    grid-area: c15;
+
+}
+
+.caja16 {
+    grid-area: c16;
+
+}
+
+// Galeria de trabajo - Imágenes - efectos y animaciones
+
+.img-trabajo_galeria {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+
+.efecto_galeria_trabajos {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.efecto_galeria_trabajos:hover {
+
+    .textos_trabajos_galeria {
+        transform: translateY(20%);
+    }
+
+    .img-trabajo_galeria {
+        transform: scale(1.4);
+    }
+}
+
+
+// Galeria de trabajo - Textos - efectos y animaciones
+
+.textos_trabajos_galeria {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: $color-trabajos-emergente;
+    color: #fff;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+
+
+    p {
+        padding: 10px 10px 20px 10px;
+        text-align: center;
+    }
+}
+
+
+// Grid Footer
+
+.footer__trabajos {
+    grid-area: footer;
+}
